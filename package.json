@@ -1,0 +1,26 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "compile": "tsc",
+    "tslint-check": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
+    "start": " node ./build/index.js",
+    "build": "rm -rf ./build && tsc"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.7.1",
+    "@types/node": "^20.1.7",
+    "dotenv": "^16.0.3",
+    "graphql": "^16.6.0",
+    "log4js": "^6.9.1",
+    "neo4j-driver": "^5.8.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "tslint": "^5.20.1",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^5.0.4"
+  }
+}
